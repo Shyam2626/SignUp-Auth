@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Login</title>
+</head>
+<body class="custom-body">
+    <div class="container">
+        <div class="mt-5"></div>
+        <h1 class="fw-semibold text-center">Login</h1>
+        <div class="mt-4"></div>
+        <form action="/home" method="get">
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">UserName</label>
+                <div class="col-sm-7">
+                    <input required type="text" class="form-control bg-body-tertiary" id="username" name="username">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-7">
+                    <input required type="password" class="form-control bg-body-tertiary" id="password" name="password">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                </div>
+                <div class="col-md-6">
+                    <button type="submit" class="col-md-4 btn btn-outline-danger">Login</button>
+                </div>
+            </div>
+        </form>
+        <div class="mt-2"></div>
+        <form action="/createaccount" method="POST">
+            <div class="row">
+                <div class="col-md-6">
+                </div>
+                <div class="col-md-6">
+                    <button type="submit" class="col-md-4 btn btn-outline-danger">Create Account ??</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

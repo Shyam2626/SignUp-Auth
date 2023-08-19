@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>New-Registration</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="mt-5"></div>
+        <h1 class="fw-semibold text-center">Welcome to Registration</h1>
+        <form action="/newuser" method="POST">
+            <div class="mt-5"></div>
+            <div class="row">
+                <div class="col">
+                    <input type="text" required  class="form-control  bg-body-tertiary" id="firstname" name="firstname"
+                        placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col">
+                    <input type="text" required class="form-control bg-body-tertiary" id="lastname" name="lastname"
+                        placeholder="Last name" aria-label="Last name">
+                </div>
+            </div>
+            <div class="mt-5"></div>
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">UserName</label>
+                <div class="col-sm-7">
+                    <input type="text" required class="form-control bg-body-tertiary" id="username" name="username">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-7">
+                    <input type="password" required class="form-control bg-body-tertiary" id="password" name="password">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Confirm Password</label>
+                <div class="col-sm-7">
+                    <input type="password" required class="form-control bg-body-tertiary" id="conpassword" name="conpassword">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                </div>
+                <div class="col-md-4">
+                    <button type="submit" class="col-md-4 btn btn-outline-danger">Regiter</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
